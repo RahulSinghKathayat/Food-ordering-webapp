@@ -10,35 +10,48 @@
 
     <!-- header section -->
     
-    <header>
+<header>
         <nav>
-            <div class="logo">JTGeats</div>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Menu</li>
-                <li>Blog</li>
-                <li>Contact</li>
-            </ul>
+            <div class="logo">XXXXX</div>
+
+        <div class="nav-icons">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Menu</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </div>
         <div class="icons">
             <div class="search-icon">
-                <img src="img/search.svg" alt="">
+                <a href="">
+                <img src="img/search.svg" alt=""></a>
             </div>
-            <div class="cart-icon">
+            <div class="cart-container">
+            <div class="cart-icon bag-icon" id="bag-icon">
                 <img src="img/bag.svg" alt="">
-            </div>
+                <span class="cart-dot" style="display: none;"></span>
+            </div></div>
+            <div class="cart-popup" id="cartPopup">
+                <div class="cart-content">
+                  <img src="img/empty-bag.svg" alt="Empty Cart Icon" class="cart-image">
+                  <h2>Cart is Empty</h2>
+                  <p>Add some items to the cart to checkout</p>
+                  <button id="closePopup">Back to Menu</button>
+                </div>
+            </div>  
         </div>
 
         </nav>
-    </header>
+</header>
+    
 
-    <section>
+    <section class="section-main">
         <div class="main">
             <div class="'header">
             <h1>Authentic Home food in India</h1>
-            <p>JTGeats is a courier service in which authentic home cook food is delivered to a customer.</p>
+            <p>XXXXX is a courier service in which authentic home cook food is delivered to a customer.</p>
             <div class="Search">
-                <input type="text" placeholder="Search..."><button>Search</button>
+                <input type="text" placeholder="Search food you love"><button>Search</button>
             </div>
         </div>
 
@@ -57,21 +70,25 @@
     </div>
 
     <div class="wrapping">
-    <div class="card">
-        <img src="img/unsplash_nP11TkjxJ7s.svg" alt="Home made pizza" class="card-image">
-        <div class="offer-text">50%</div>
-        <div class="card-content">
-            <div class="same">
-                <h3>Home made pizza</h3>
-                <p class="price">₹123</p>
-            </div>
-            <div class="details">
-                <span class="rating">⭐ 4.7</span>
-                <span class="time">50-79 min</span>
-                <button class="add-btn">+</button>
+        <div class="card">
+            <img src="img/unsplash_nP11TkjxJ7s.svg" alt="Home made pizza" class="card-image">
+            <div class="offer-text">50%</div>
+            <div class="card-content">
+                <div class="same">
+                    <h3>Home made pizza</h3>
+                    <p class="price">₹123</p>
+                </div>
+                <div class="details">
+                    <span class="rating"><span class="star">&#9733</span> 4.7</span>
+                    <span class="time">50-79 min</span>
+                    <div class="quantity-controls">
+                        <button class="decrease-btn" style="display: none;">-</button>
+                        <span class="quantity" style="display: none;">0</span>
+                        <button class="increase-btn">+</button>
+                      </div>
+                </div>
             </div>
         </div>
-    </div>
 
 
 
@@ -79,34 +96,42 @@
     
 
     <div class="card">
-        <img src="img/unsplash_nP11TkjxJ7s.svg" alt="Home made pizza" class="card-image">
+        <img src="img/pizza2.svg" alt="Home made pizza" class="card-image">
         <div class="offer-text">50%</div>
         <div class="card-content">
             <div class="same">
                 <h3>Home made pizza</h3>
-                <p class="price">₹123</p>
+                <p class="price">₹190</p>
             </div>
             <div class="details">
-                <span class="rating">⭐ 4.7</span>
+                <span class="rating"><span class="star">&#9733</span> 4.7</span>
                 <span class="time">50-79 min</span>
-                <button class="add-btn">+</button>
+                <div class="quantity-controls">
+                    <button class="decrease-btn" style="display: none;">-</button>
+                    <span class="quantity" style="display: none;">0</span>
+                    <button class="increase-btn">+</button>
+                  </div>
             </div>
         </div>
     </div>
 
     <!-- no.3 -->
     <div class="card">
-        <img src="img/unsplash_nP11TkjxJ7s.svg" alt="Home made pizza" class="card-image">
-        <div class="offer-text">50%</div>
+        <img src="img/pizza3.svg" alt="Home made pizza" class="card-image">
+        <!-- <div class="offer-text">50%</div> -->
         <div class="card-content">
             <div class="same">
                 <h3>Home made pizza</h3>
                 <p class="price">₹123</p>
             </div>
             <div class="details">
-                <span class="rating">⭐ 4.7</span>
+                <span class="rating"><span class="star">&#9733</span> 4.7</span>
                 <span class="time">50-79 min</span>
-                <button class="add-btn">+</button>
+                <div class="quantity-controls">
+                    <button class="decrease-btn" style="display: none;">-</button>
+                    <span class="quantity" style="display: none;">0</span>
+                    <button class="increase-btn">+</button>
+                  </div>
             </div>
         </div>
     </div>
@@ -114,152 +139,188 @@
 
     <!-- no.4 -->
     <div class="card">
-        <img src="img/unsplash_nP11TkjxJ7s.svg" alt="Home made pizza" class="card-image">
-        <div class="offer-text">50%</div>
+        <img src="img/pizza4.svg" alt="Home made pizza" class="card-image">
+        <div class="offer-text">20%</div>
         <div class="card-content">
             <div class="same">
                 <h3>Home made pizza</h3>
-                <p class="price">₹123</p>
+                <p class="price">₹190</p>
             </div>
             <div class="details">
-                <span class="rating">⭐ 4.7</span>
+                <span class="rating"><span class="star">&#9733</span> 4.7</span>
                 <span class="time">50-79 min</span>
-                <button class="add-btn">+</button>
+                <div class="quantity-controls">
+                    <button class="decrease-btn" style="display: none;">-</button>
+                    <span class="quantity" style="display: none;">0</span>
+                    <button class="increase-btn">+</button>
+                  </div>
             </div>
         </div>
     </div>
 
     <!-- no.5 -->
     <div class="card">
-        <img src="img/unsplash_nP11TkjxJ7s.svg" alt="Home made pizza" class="card-image">
-        <div class="offer-text">50%</div>
+        <img src="img/pizza5.svg" alt="Home made pizza" class="card-image">
+        <!-- <div class="offer-text">50%</div> -->
         <div class="card-content">
             <div class="same">
                 <h3>Home made pizza</h3>
-                <p class="price">₹123</p>
+                <p class="price">₹190</p>
             </div>
             <div class="details">
-                <span class="rating">⭐ 4.7</span>
+                <span class="rating"><span class="star">&#9733</span> 4.7</span>
                 <span class="time">50-79 min</span>
-                <button class="add-btn">+</button>
+                <div class="quantity-controls">
+                    <button class="decrease-btn" style="display: none;">-</button>
+                    <span class="quantity" style="display: none;">0</span>
+                    <button class="increase-btn">+</button>
+                  </div>
             </div>
         </div>
     </div>
 
     <!-- no.6 -->
     <div class="card">
-        <img src="img/unsplash_nP11TkjxJ7s.svg" alt="Home made pizza" class="card-image">
-        <div class="offer-text">50%</div>
+        <img src="img/pizza6.svg" alt="Home made pizza" class="card-image">
+        <!-- <div class="offer-text">50%</div> -->
         <div class="card-content">
             <div class="same">
                 <h3>Home made pizza</h3>
-                <p class="price">₹123</p>
+                <p class="price">₹190</p>
             </div>
             <div class="details">
-                <span class="rating">⭐ 4.7</span>
+                <span class="rating"><span class="star">&#9733</span> 4.7</span>
                 <span class="time">50-79 min</span>
-                <button class="add-btn">+</button>
+                <div class="quantity-controls">
+                    <button class="decrease-btn" style="display: none;">-</button>
+                    <span class="quantity" style="display: none;">0</span>
+                    <button class="increase-btn">+</button>
+                  </div>
             </div>
         </div>
     </div>
 
     <!-- no.7 -->
     <div class="card">
-        <img src="img/unsplash_nP11TkjxJ7s.svg" alt="Home made pizza" class="card-image">
-        <div class="offer-text">50%</div>
+        <img src="img/pizza7.svg" alt="Home made pizza" class="card-image">
+        <div class="offer-text">20%</div>
         <div class="card-content">
             <div class="same">
                 <h3>Home made pizza</h3>
-                <p class="price">₹123</p>
+                <p class="price">₹190</p>
             </div>
             <div class="details">
-                <span class="rating">⭐ 4.7</span>
+                <span class="rating"><span class="star">&#9733</span> 4.7</span>
                 <span class="time">50-79 min</span>
-                <button class="add-btn">+</button>
+                <div class="quantity-controls">
+                    <button class="decrease-btn" style="display: none;">-</button>
+                    <span class="quantity" style="display: none;">0</span>
+                    <button class="increase-btn">+</button>
+                  </div>
             </div>
         </div>
     </div>
     <!-- no.8 -->
     <div class="card">
-        <img src="img/unsplash_nP11TkjxJ7s.svg" alt="Home made pizza" class="card-image">
+        <img src="img/pizza8.svg" alt="Home made pizza" class="card-image">
         <div class="offer-text">50%</div>
         <div class="card-content">
             <div class="same">
                 <h3>Home made pizza</h3>
-                <p class="price">₹123</p>
+                <p class="price">₹190</p>
             </div>
             <div class="details">
-                <span class="rating">⭐ 4.7</span>
-                <span class="time">50-79 min</span>
-                <button class="add-btn">+</button>
-            </div>
+                    <span class="rating"><span class="star">&#9733</span> 4.7</span>
+                    <span class="time">50-79 min</span>
+                    <div class="quantity-controls">
+                        <button class="decrease-btn" style="display: none;">-</button>
+                        <span class="quantity" style="display: none;">0</span>
+                        <button class="increase-btn">+</button>
+                      </div>
+                </div>
         </div>
     </div>
 
     <!-- no.9 -->
     <div class="card">
-        <img src="img/unsplash_nP11TkjxJ7s.svg" alt="Home made pizza" class="card-image">
+        <img src="img/pizza9.svg" alt="Home made pizza" class="card-image">
         <div class="offer-text">50%</div>
         <div class="card-content">
             <div class="same">
                 <h3>Home made pizza</h3>
-                <p class="price">₹123</p>
+                <p class="price">$19</p>
             </div>
             <div class="details">
-                <span class="rating">⭐ 4.7</span>
-                <span class="time">50-79 min</span>
-                <button class="add-btn">+</button>
-            </div>
+                    <span class="rating"><span class="star">&#9733</span> 4.7</span>
+                    <span class="time">50-79 min</span>
+                    <div class="quantity-controls">
+                        <button class="decrease-btn" style="display: none;">-</button>
+                        <span class="quantity" style="display: none;">0</span>
+                        <button class="increase-btn">+</button>
+                      </div>
+                </div>
         </div>
     </div>
 
     <!-- no.10 -->
     <div class="card">
-        <img src="img/unsplash_nP11TkjxJ7s.svg" alt="Home made pizza" class="card-image">
-        <div class="offer-text">50%</div>
+        <img src="img/pizza10.svg" alt="Home made pizza" class="card-image">
+        <!-- <div class="offer-text">50%</div> -->
         <div class="card-content">
             <div class="same">
                 <h3>Home made pizza</h3>
-                <p class="price">₹123</p>
+                <p class="price">₹190</p>
             </div>
             <div class="details">
-                <span class="rating">⭐ 4.7</span>
-                <span class="time">50-79 min</span>
-                <button class="add-btn">+</button>
-            </div>
+                    <span class="rating"><span class="star">&#9733</span> 4.7</span>
+                    <span class="time">50-79 min</span>
+                    <div class="quantity-controls">
+                        <button class="decrease-btn" style="display: none;">-</button>
+                        <span class="quantity" style="display: none;">0</span>
+                        <button class="increase-btn">+</button>
+                      </div>
+                </div>
         </div>
     </div>
     <!-- n0.11 -->
     <div class="card">
-        <img src="img/unsplash_nP11TkjxJ7s.svg" alt="Home made pizza" class="card-image">
-        <div class="offer-text">50%</div>
+        <img src="img/pizza11.svg" alt="Home made pizza" class="card-image">
+        <div class="offer-text">20%</div>
         <div class="card-content">
             <div class="same">
                 <h3>Home made pizza</h3>
-                <p class="price">₹123</p>
+                <p class="price">₹190</p>
             </div>
             <div class="details">
-                <span class="rating">⭐ 4.7</span>
-                <span class="time">50-79 min</span>
-                <button class="add-btn">+</button>
-            </div>
+                    <span class="rating"><span class="star">&#9733</span> 4.7</span>
+                    <span class="time">50-79 min</span>
+                    <div class="quantity-controls">
+                        <button class="decrease-btn" style="display: none;">-</button>
+                        <span class="quantity" style="display: none;">0</span>
+                        <button class="increase-btn">+</button>
+                      </div>
+                </div>
         </div>
     </div>
 
     <!-- n0.12 -->
     <div class="card" >
-        <img src="img/unsplash_nP11TkjxJ7s.svg" alt="Home made pizza" class="card-image">
-        <div class="offer-text">50%</div>
+        <img src="img/pizza12.svg" alt="Home made pizza" class="card-image">
+        <!-- <div class="offer-text">20%</div> -->
         <div class="card-content">
             <div class="same">
                 <h3>Home made pizza</h3>
-                <p class="price">₹123</p>
+                <p class="price">₹190</p>
             </div>
             <div class="details">
-                <span class="rating">⭐ 4.7</span>
-                <span class="time">50-79 min</span>
-                <button class="add-btn">+</button>
-            </div>
+                    <span class="rating"><span class="star">&#9733</span> 4.7</span>
+                    <span class="time">50-79 min</span>
+                    <div class="quantity-controls">
+                        <button class="decrease-btn" style="display: none;">-</button>
+                        <span class="quantity" style="display: none;">0</span>
+                        <button class="increase-btn">+</button>
+                      </div>
+                </div>
         </div>
     </div>
 </div>
@@ -268,110 +329,221 @@
 
 <!-- popular items -->
 
-<section class="popular-items">
-    <div class="pop-heading">
-        <h2>Popular Items</h2>
-    </div>
-    <div class="button-cen">
-
-        <button class="carousel-button prev" onclick="scrollCarousel(-1)">&#10094;</button>
-        <div class="carousel-container">
-            <div class="carousel-track">
-                <div class="card carousel-item" >
-                    <img src="img/unsplash_nP11TkjxJ7s.svg" alt="Home made pizza" class="card-image">
-                    <div class="offer-text">50%</div>
-                    <div class="card-content">
-                        <div class="same">
-                            <h3>Home made pizza</h3>
-                            <p class="price">₹123</p>
-                        </div>
-                        <div class="details">
-                            <span class="rating">⭐ 4.7</span>
-                            <span class="time">50-79 min</span>
-                            <button class="add-btn">+</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card carousel-item" >
-                    <img src="img/unsplash_nP11TkjxJ7s.svg" alt="Home made pizza" class="card-image">
-                    <div class="offer-text">50%</div>
-                    <div class="card-content">
-                        <div class="same">
-                            <h3>Home made pizza</h3>
-                            <p class="price">₹123</p>
-                        </div>
-                        <div class="details">
-                            <span class="rating">⭐ 4.7</span>
-                            <span class="time">50-79 min</span>
-                            <button class="add-btn">+</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card carousel-item" >
-                    <img src="img/unsplash_nP11TkjxJ7s.svg" alt="Home made pizza" class="card-image">
-                    <div class="offer-text">50%</div>
-                    <div class="card-content">
-                        <div class="same">
-                            <h3>Home made pizza</h3>
-                            <p class="price">₹123</p>
-                        </div>
-                        <div class="details">
-                            <span class="rating">⭐ 4.7</span>
-                            <span class="time">50-79 min</span>
-                            <button class="add-btn">+</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card carousel-item" >
-                    <img src="img/unsplash_nP11TkjxJ7s.svg" alt="Home made pizza" class="card-image">
-                    <div class="offer-text">50%</div>
-                    <div class="card-content">
-                        <div class="same">
-                            <h3>Home made pizza</h3>
-                            <p class="price">₹123</p>
-                        </div>
-                        <div class="details">
-                            <span class="rating">⭐ 4.7</span>
-                            <span class="time">50-79 min</span>
-                            <button class="add-btn">+</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card carousel-item" >
-                    <img src="img/unsplash_nP11TkjxJ7s.svg" alt="Home made pizza" class="card-image">
-                    <div class="offer-text">50%</div>
-                    <div class="card-content">
-                        <div class="same">
-                            <h3>Home made pizza</h3>
-                            <p class="price">₹123</p>
-                        </div>
-                        <div class="details">
-                            <span class="rating">⭐ 4.7</span>
-                            <span class="time">50-79 min</span>
-                            <button class="add-btn">+</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card carousel-item" >
-                    <img src="img/unsplash_nP11TkjxJ7s.svg" alt="Home made pizza" class="card-image">
-                    <div class="offer-text">50%</div>
-                    <div class="card-content">
-                        <div class="same">
-                            <h3>Home made pizza</h3>
-                            <p class="price">₹123</p>
-                        </div>
-                        <div class="details">
-                            <span class="rating">⭐ 4.7</span>
-                            <span class="time">50-79 min</span>
-                            <button class="add-btn">+</button>
-                        </div>
-                    </div>
+<section class="popular-section">
+    <h2 class="popular">Popular Items</h2>
+<div class="maintain-pose" >
+    <button class="carousel-btn prev-btn"><span class="arrow-button">&#9204</span></button>
+    <div class="carousel-container">
+        <div class="carousel">
+          <div class="card card1">
+            <img src="img/p1.svg" alt="Home made pizza" class="p-card-image">
+            <div class="p-offer-text">50%</div>
+            <div class="card-content">
+              <div class="same">
+                <h3>Tandoori Chicken</h3>
+                <p class="price">₹184</p>
+              </div>
+              <div class="details">
+                    <span class="rating"><span class="star">&#9733</span> 4.3</span>
+                    <span class="time">15-29 min</span>
+                    <div class="quantity-controls">
+                        <button class="decrease-btn" style="display: none;">-</button>
+                        <span class="quantity" style="display: none;">0</span>
+                        <button class="increase-btn">+</button>
+                      </div>
                 </div>
             </div>
+          </div>
+          <div class="card card1">
+            <img src="img/p2.svg" alt="Tandoori Chicken" class="p-card-image">
+            <div class="p-offer-text">20%</div>
+            <div class="card-content">
+              <div class="same">
+                <h3>Chilli Chicken</h3>
+                <p class="price">₹116</p>
+              </div>
+              <div class="details">
+                    <span class="rating"><span class="star">&#9733</span> 4.3</span>
+                    <span class="time">15-29 min</span>
+                    <div class="quantity-controls">
+                        <button class="decrease-btn" style="display: none;">-</button>
+                        <span class="quantity" style="display: none;">0</span>
+                        <button class="increase-btn">+</button>
+                      </div>
+                </div>
+            </div>
+          </div>
+          <div class="card card1">
+            <img src="img/pizza12.svg" alt="Chilli Chicken" class="p-card-image">
+            <div class="p-offer-text">50%</div>
+            <div class="card-content">
+              <div class="same">
+                <h3>Home made pizza</h3>
+                <p class="price">₹190</p>
+              </div>
+              <div class="details">
+                <span class="rating"><span class="star">&#9733</span> 4.7</span>
+                <span class="time">50-79 min</span>
+                <div class="quantity-controls">
+                    <button class="decrease-btn" style="display: none;">-</button>
+                    <span class="quantity" style="display: none;">0</span>
+                    <button class="increase-btn">+</button>
+                  </div>
+            </div>
+            </div>
+          </div>
+          <div class="card card1">
+            <img src="img/pizza3.svg" alt="Tandoori Chicken" class="p-card-image">
+            <div class="p-offer-text">20%</div>
+            <div class="card-content">
+              <div class="same">
+                <h3>Home made pizza</h3>
+                <p class="price">₹123</p>
+              </div>
+              <div class="details">
+                    <span class="rating"><span class="star">&#9733</span> 4.7</span>
+                    <span class="time">50-79 min</span>
+                    <div class="quantity-controls">
+                        <button class="decrease-btn" style="display: none;">-</button>
+                        <span class="quantity" style="display: none;">0</span>
+                        <button class="increase-btn">+</button>
+                      </div>
+                </div>
+            </div>
+          </div>
+          <div class="card card1">
+            <img src="img/pizza7.svg" alt="Tandoori Chicken" class="p-card-image">
+            <div class="p-offer-text">20%</div>
+            <div class="card-content">
+              <div class="same">
+                <h3>Home made pizza</h3>
+                <p class="price">₹190</p>
+              </div>
+              <div class="details">
+                    <span class="rating"><span class="star">&#9733</span> 4.7</span>
+                    <span class="time">50-79 min</span>
+                    <div class="quantity-controls">
+                        <button class="decrease-btn" style="display: none;">-</button>
+                        <span class="quantity" style="display: none;">0</span>
+                        <button class="increase-btn">+</button>
+                      </div>
+                </div>
+            </div>
+          </div>
+          <div class="card card1">
+            <img src="img/pizza2.svg" alt="Tandoori Chicken" class="p-card-image">
+            <div class="p-offer-text">20%</div>
+            <div class="card-content">
+              <div class="same">
+                <h3>Home made pizza</h3>
+                <p class="price">$19</p>
+              </div>
+              <div class="details">
+                <span class="rating"><span class="star">&#9733</span> 4.7</span>
+                <span class="time">50-79 min</span>
+                <div class="quantity-controls">
+                    <button class="decrease-btn" style="display: none;">-</button>
+                    <span class="quantity" style="display: none;">0</span>
+                    <button class="increase-btn">+</button>
+                  </div>
+            </div>
+            </div>
+          </div>
+
         </div>
-        <button class="carousel-button next" onclick="scrollCarousel(1)">&#10095;</button>
-      </div>            
+
+        </div>
+        <button class="carousel-btn next-btn"><span class="arrow-button">&#9205</span></button>
+      
+  </div>
+  <div class="req">
+    <button class="req-button" onclick="openForm()">Request a dish</button>
+  </div>
+  <div id="requestForm" class="modal">
+    <div class="modal-content">
+        <h2>Request a Dish</h2>
+        <form>
+            <div class="form-input">
+            <label for="dish-name">Name*</label>
+            <input type="text" id="dish-name" placeholder="Enter name of the dish" required>
+            
+            <label for="dish-image">Upload an image</label>
+            <input type="text" id="dish-image" placeholder="Paste a URL">
+        </div>
+            
+            <div class="form-buttons">
+                <button type="button" class="cancel-btn" onclick="closeForm()">Cancel</button>
+                <button type="submit" class="submit-btn" onclick="closeForm()">Submit Request</button>
+            </div>
+        
+        </form>
+    </div>
+</div>
+
 </section>
+
+<section class="delivery-section">
+    <div class="text">
+        <span>We are providing the best</span>
+        <span>home cooked food delivery service.</span>
+    </div>
+        <div class="para">
+        <p>Away from home and craving the tasty homemade recipes?
+        Choose from a selection of our delicious home cooked dishes</p>
+    </div>
+
+    <div class="video-container">
+        <video id ="myVideo" class="video">
+          <source src="video/video.mp4" type="video/mp4" >
+        </video>
+        <button class="play-pause-btn" id="playPauseBtn">⏵</button>
+      </div>
+    </section>
+
+<section class="qna-section">
+        <div class="qna-box">
+            <div class="qna-content">
+            <div class="qna-heading">
+                Do you have any question?
+                or want to become a seller?
+            </div>
+            <p>Fill this form and our manager will contact you next 48 hours.</p>
+
+            <input type="text" placeholder="Your Name" id="name">
+            <input type="text" placeholder="Your e-mail" id="email">
+            <textarea name="message" id="message" placeholder="Your message"></textarea>
+
+            <button type="submit">Submit</button>
+        </div>
+        <div>
+            <img src="img/Food_delivery_cute_man_riding_motorcycles_cartoon_art_illustration 2.svg" alt="food delivery" class="img-food-delivery">
+            </div>
+        </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+      <h2 class="brand">XXXXX</h2>
+      <nav class="footer-nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Menu</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </nav>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook">
+          <img src="img/Card.svg" alt="Facebook">
+        </a>
+        <a href="#" aria-label="Instagram">
+          <img src="img/iconoir_add-to-cart.svg" alt="Instagram">
+        </a>
+      </div>
+    </div>
+    <hr class="footer-line">
+  </footer>
+
+
 <script src="script.js" defer></script>
 
 
